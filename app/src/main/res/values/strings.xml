@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Atividade4</string>
+    <string name="botao">Calcular</string>
+    <string name="requirido">Requerido</string>
+    <string name="hintIdade">Idade</string>
+
+</resources>
