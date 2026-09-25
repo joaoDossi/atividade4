@@ -16,7 +16,7 @@
         android:layout_height="49dp"
         android:padding="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/botao"
@@ -29,8 +29,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputIdade"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:fontFamily="@font/typemachine"
+        android:textSize="20sp"/>
 
+    <!-- helperText: põe uma mensagem embaixo do TextInput
+         helperTextColor: define qual é a cor do texto do helperText
+         counterEnabled: mostra o contador de caracteres
+         counterMaxLength: dita qual é o limite de caracteres
+         endIconMode: dita qual vai ser o ícone no final do TextInputEditText e o que ele faz
+    -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputIdade"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -40,7 +48,7 @@
         app:counterEnabled="true"
         app:counterMaxLength="3"
         app:endIconMode="clear_text"
-        app:helperText="@string/requirido"
+        app:helperText=""
         app:helperTextTextColor="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -50,6 +58,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fontFamily="@font/typemachine"
         android:maxLength="3"
         android:hint="@string/hintIdade"
         android:inputType="number"
@@ -65,7 +74,9 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botao" />
+        app:layout_constraintTop_toBottomOf="@+id/botao"
+        android:fontFamily="@font/typemachine"
+        android:textSize="15sp"/>
 
     <TextView
         android:id="@+id/nome"
@@ -75,6 +86,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultado"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/typemachine"
+        android:textSize="20sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
