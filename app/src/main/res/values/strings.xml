@@ -3,5 +3,6 @@
     <string name="botao">Calcular</string>
     <string name="requirido">Requerido</string>
     <string name="hintIdade">Idade</string>
-
+    <string name="resultado">Resultado</string>
+    <string name="nome">João Pedro Miranda Dossi</string>
 </resources>
